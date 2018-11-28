@@ -1,6 +1,7 @@
 # Devops-Workshop
 
 # Challenge
+##Day 1
 
 Build & deploy a simple application based on one of the three runtimes: Spring Boot, Thorntail(RH implementation of Eclipse Microprofile, formerly known as Wildfly Swarm, vert.x
 
@@ -39,6 +40,7 @@ So you will introduce a blue/green deployment for your application.
 - During deployment time, decide which service(e.g. blue) is currently active and set the route to the non-active service(e.g green).
 - Are you sure that your DeploymentConfigs has the right triggers set on them?
 
+##Day 2
 
 
 #### 4th phase
@@ -52,10 +54,13 @@ For more details about the logging format read [this blog post](https://develope
 - Deploy prometheus based on a trusted open source template
 - Configure alerts based on a condition which counts the number of restarts within a given period
 
+
+
 #### 5th phase
 
 Your application has been a great success, and you get notifications about certain events. However, you want the system to react to load automatically.
 Maybe it's time to start testing out [Horizontal Pod Autoscaling/HPA](https://docs.openshift.com/container-platform/3.11/dev_guide/pod_autoscaling.html).
+
 
 
 ## General Tips:
