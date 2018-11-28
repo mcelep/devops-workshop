@@ -3,7 +3,7 @@
 # Challenge
 ## Day 1
 
-Build & deploy a simple application based on one of the three runtimes: Spring Boot, Thorntail(RH implementation of Eclipse Microprofile, formerly known as Wildfly Swarm, vert.x
+Build & deploy a simple application based on one of the three runtimes: Spring Boot, Thorntail(RH implementation of Eclipse Microprofile, formerly known as Wildfly Swarm), vert.x
 
 [Here](https://github.com/mcelep/spring-boot-hello-world) is a simple app based on Spring Boot, you are however free to use anything you like.
 
