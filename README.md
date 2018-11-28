@@ -1,7 +1,7 @@
 # Devops-Workshop
 
 # Challenge
-##Day 1
+## Day 1
 
 Build & deploy a simple application based on one of the three runtimes: Spring Boot, Thorntail(RH implementation of Eclipse Microprofile, formerly known as Wildfly Swarm, vert.x
 
@@ -40,7 +40,7 @@ So you will introduce a blue/green deployment for your application.
 - During deployment time, decide which service(e.g. blue) is currently active and set the route to the non-active service(e.g green).
 - Are you sure that your DeploymentConfigs has the right triggers set on them?
 
-##Day 2
+## Day 2
 
 
 #### 4th phase
