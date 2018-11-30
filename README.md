@@ -52,7 +52,7 @@ Maybe it's time to start testing out [Horizontal Pod Autoscaling/HPA](https://do
 
 Some users of application complain that application is not reachable every once in a while.
 You want to analyse how often pods get restarted. You do some research and see that [Prometheus](https://prometheus.io/) is very popular in Kubernetes world , so you decide to give it a try.
-Cluster you run your application does not have an Prometheus operator available. Will that stop you from installing Prometheus? (how about [this](https://github.com/openshift/origin/blob/master/examples/prometheus/prometheus-standalone.yaml) 
+Cluster you run your application does not have an Prometheus operator available. Will that stop you from installing Prometheus? (how about [this one](https://raw.githubusercontent.com/ConSol/springboot-monitoring-example/master/templates/prometheus3.7_without_clusterrole.yaml ) or [this one that requires a lot hands on config](https://github.com/openshift/origin/blob/master/examples/prometheus/prometheus-standalone.yaml) 
 
 - First you want to check your application logs. If your application does not log anything, make sure it does. After that go to Kibana which is GUI for seeing(on a pod, go to tab *Logs* and search for a link called *View Archive*).
 For more details about the logging format read [this blog post](https://developers.redhat.com/blog/2018/01/22/openshift-structured-application-logs/).) 
