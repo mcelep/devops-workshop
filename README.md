@@ -34,16 +34,21 @@ Product owner, wants to make sure that the user experience for this application 
 You've done your research and found that [Blue/Green](https://martinfowler.com/bliki/BlueGreenDeployment.html) might be a good way to go about it.
 So you will introduce a blue/green deployment for your application.
 
-- Jenkins would be great for such a task but first make sure that you can create a blue/green deployment via using a bash script.
+- Jenkins would be great for such a task but first make sure that you can create a blue/green deployment also using a bash script.
 - Deploy application two times with your template and make sure that objects/resources have proper names e.g. a deploymentconfig with name *hello-world-blue* and *hello-world-green*  
 - Single route as entry point for the application 
 - During deployment time, decide which service(e.g. blue) is currently active and set the route to the non-active service(e.g green).
 - Are you sure that your DeploymentConfigs has the right triggers set on them?
+- [Here](https://github.com/mcelep/ocp-adv-app-dev/blob/master/dev/Jenkinsfile) is an example pipeline that does blue/green deployment
 
 ## Day 2
 
-
 #### 4th phase
+
+Your application has been a great success, and you get notifications about certain events. However, you want the system to react to load automatically.
+Maybe it's time to start testing out [Horizontal Pod Autoscaling/HPA](https://docs.openshift.com/container-platform/3.11/dev_guide/pod_autoscaling.html).
+
+#### 5th phase
 
 Some users of application complain that application is not reachable every once in a while.
 You want to analyse how often pods get restarted. You do some research and see that [Prometheus](https://prometheus.io/) is very popular in Kubernetes world , so you decide to give it a try.
@@ -53,13 +58,6 @@ Cluster you run your application does not have an Prometheus operator available.
 For more details about the logging format read [this blog post](https://developers.redhat.com/blog/2018/01/22/openshift-structured-application-logs/).) 
 - Deploy prometheus based on a trusted open source template
 - Configure alerts based on a condition which counts the number of restarts within a given period
-
-
-
-#### 5th phase
-
-Your application has been a great success, and you get notifications about certain events. However, you want the system to react to load automatically.
-Maybe it's time to start testing out [Horizontal Pod Autoscaling/HPA](https://docs.openshift.com/container-platform/3.11/dev_guide/pod_autoscaling.html).
 
 
 
